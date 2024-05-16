@@ -11,8 +11,11 @@ class RestaurantsController < ApplicationController
   end
 
   # GET /restaurants/new
+
   def new
     @restaurant = Restaurant.new
+    # @restaurant = Restaurant.find(params[:restaurant_id])
+    # @review = Review.new
   end
 
   # GET /restaurants/1/edit
